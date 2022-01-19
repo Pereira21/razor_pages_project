@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using RazorPagesSoccer.Data;
 
@@ -11,9 +12,10 @@ using RazorPagesSoccer.Data;
 namespace RazorPagesSoccer.Migrations
 {
     [DbContext(typeof(RazorPagesSoccerContext))]
-    partial class RazorPagesSoccerContextModelSnapshot : ModelSnapshot
+    [Migration("20220119192916_v003-TypeColumnFoundingClub")]
+    partial class v003TypeColumnFoundingClub
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

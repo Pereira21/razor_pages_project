@@ -1,4 +1,4 @@
-﻿@page
+﻿@page "{id:guid}"
 @model RazorPagesSoccer.Pages.Clubs.EditModel
 
 @{
@@ -14,6 +14,11 @@
         <form method="post">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input type="hidden" asp-for="Club.Id" />
+             <div class="form-group">
+                <label asp-for="Club.Name" class="control-label"></label>
+                <input asp-for="Club.Name" class="form-control" />
+                <span asp-validation-for="Club.Name" class="text-danger"></span>
+            </div>
             <div class="form-group">
                 <label asp-for="Club.Founding" class="control-label"></label>
                 <input asp-for="Club.Founding" class="form-control" />
