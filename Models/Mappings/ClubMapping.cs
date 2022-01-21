@@ -12,6 +12,9 @@ namespace RazorPagesSoccer.Models.Mappings
             builder.Property(p => p.Name)
                 .IsRequired();
 
+            builder.Property(p => p.State)
+                .IsRequired();
+
             builder.Property(p => p.Founding)
                 .HasColumnType("date")
                 .IsRequired();

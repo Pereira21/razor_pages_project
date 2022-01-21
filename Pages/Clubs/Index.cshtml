@@ -10,11 +10,25 @@
 <p>
     <a asp-page="Create">Create New</a>
 </p>
+
+<form>
+    <p>
+        <select asp-for="ClubState" asp-items="Model.States">
+            <option value="">All</option>
+        </select>
+        Title: <input type="text" asp-for="SearchString" />
+        <input type="submit" value="Filter" />
+    </p>
+</form>
+
 <table class="table">
     <thead>
         <tr>
             <th>
                 @Html.DisplayNameFor(model => model.Club[0].Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Club[0].State)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Club[0].Founding)
@@ -27,6 +41,9 @@
         <tr>
             <td>
                 @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.State)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Founding)

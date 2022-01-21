@@ -26,24 +26,28 @@ namespace RazorPagesSoccer.Models
                     new Club
                     {
                         Name = "Fluminense",
+                        State = "Rio de Janeiro",
                         Founding = new DateTime(1902, 02, 27)
                     },
 
                     new Club
                     {
                         Name = "Flamengo",
+                        State = "Rio de Janeiro",
                         Founding = new DateTime(1908, 10, 11)
                     },
 
                     new Club
                     {
-                        Name = "Botafogo",
+                        Name = "Cruzeiro",
+                        State = "Minas Gerais",
                         Founding = new DateTime(1904, 08,24)
                     },
 
                     new Club
                     {
-                        Name = "Vasco",
+                        Name = "Grêmio",
+                        State = "Rio Grande do Sul",
                         Founding = new DateTime(1907, 04, 17)
                     }
                 );
